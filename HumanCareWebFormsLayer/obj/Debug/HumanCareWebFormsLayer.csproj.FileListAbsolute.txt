@@ -1,0 +1,4 @@
+C:\Users\SONY\Documents\Visual Studio 2010\Projects\hospitalmanagementempty\HumanCareWebFormsLayer\bin\HumanCareWebFormsLayer.dll
+C:\Users\SONY\Documents\Visual Studio 2010\Projects\hospitalmanagementempty\HumanCareWebFormsLayer\bin\HumanCareWebFormsLayer.pdb
+C:\Users\SONY\Documents\Visual Studio 2010\Projects\hospitalmanagementempty\HumanCareWebFormsLayer\obj\Debug\HumanCareWebFormsLayer.dll
+C:\Users\SONY\Documents\Visual Studio 2010\Projects\hospitalmanagementempty\HumanCareWebFormsLayer\obj\Debug\HumanCareWebFormsLayer.pdb

@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "PatientRoom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+<h3 class="h3">Patient Room Booking and Management</h3>
+        <div id="buttons">
+            <a class="button" href="@Url.Action("PatientRoom","Home")">Room Modification</a>
+            <a class="button" href="@Url.Action("Index","Home")">Room Availability</a> 
+            <a class="button" href="@Url.Action("PatientMgmt","Home")">Room Booking</a> 
+            <a class="button" href="@Url.Action("PatientAppt","Home")">Patient info in room</a>
+            <a class="button" href="@Url.Action("DoctorsArena","Home")">Other details</a> 
+            <iframe src=></iframe>
+        </div>
+        @RenderPage("~/Views/Home/test.cshtml")
+
+</div>
