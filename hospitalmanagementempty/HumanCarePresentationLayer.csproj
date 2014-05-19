@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -186,6 +187,14 @@
     <Content Include="Views\Home\popup.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HumanCareDataLayer\HumanCareDataLayer.csproj">
+      <Project>{FA10409E-F4FD-4A9E-A9A0-AED76BFABEA9}</Project>
+      <Name>HumanCareDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HumanCareModelLayer\HumanCareModelLayer.csproj">
+      <Project>{EF754A3C-7082-4C6B-9F32-C2A9253D8DDD}</Project>
+      <Name>HumanCareModelLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HumanCareWebFormsLayer\HumanCareWebFormsLayer.csproj">
       <Project>{56CF40BE-47DE-4DA1-B366-53104DB584AB}</Project>
       <Name>HumanCareWebFormsLayer</Name>

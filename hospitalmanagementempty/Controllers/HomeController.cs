@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HumanCareDataLayer;
+using HumanCareModelLayer.Models;
 
 namespace hospitalmanagementempty.Controllers
 {
     public class HomeController : Controller
     {
+        PatientRoomRepository roomrep = new PatientRoomRepository();
         //
         // GET: /Home/
 
@@ -23,7 +26,8 @@ namespace hospitalmanagementempty.Controllers
 
         public ActionResult PatientRoom()
         {
-            return View();
+            IEnumerable<PatientRoom> room = roomrep.GetallRoom();
+            return View(room);
         }
 
         public ActionResult DoctorsArena()

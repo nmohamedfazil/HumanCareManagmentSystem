@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<HumanCareModelLayer.Models.PatientRoom>
+
+@{
     ViewBag.Title = "PatientRoom";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -11,8 +13,45 @@
             <a class="button" href="@Url.Action("PatientMgmt","Home")">Room Booking</a> 
             <a class="button" href="@Url.Action("PatientAppt","Home")">Patient info in room</a>
             <a class="button" href="@Url.Action("DoctorsArena","Home")">Other details</a> 
-            <iframe src=></iframe>
         </div>
         @RenderPage("~/Views/Home/test.cshtml")
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.patientid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.roomid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fromDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.toDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.treatmentid)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.patientid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.roomid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fromDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.toDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.treatmentid)
+        </td>
+    </tr>
+}
 
 </div>
